@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap");
+/* font-family: 'Kalnia', serif; */
+
+/* variables */
+:root {
+  --main-color: #deab5f;
+  --primary-color: #312e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utility */
+button {
+  padding: 15px 40px;
+  background: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #100e0f;
+}
+
+/* nav-start */
+nav h1 {
+  font-size: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "Kalnia", serif;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+li a:hover {
+  border-bottom: 2px solid var(--main-color);
+  cursor: pointer;
+}
+
+/* nav-end */
+
+/* header-start */
+.header {
+  font-family: "Kalnia", serif;
+  background: url(images/header\ background.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  position: absolute;
+  top: 19rem;
+  font-size: 8rem;
+}
+
+.primary-heading {
+  font-size: 6rem;
+}
+
+.main-button {
+  padding: 17px 60px;
+  font-size: larger;
+  position: absolute;
+  bottom: 15rem;
+  color: #000;
+  box-shadow: 0 0 15px rgba(129, 64, 24, 255);
+  border: 0px;
+  border-radius: 4px;
+}
+
+/* header end */
+
+/* Our Story start */
+#our-story {
+  height: 80vh;
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img {
+  width: 700px;
+  height: 700px;
+  background-image: url(images/our-family-background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.section-content {
+  font-family: "Kalnia", serif;
+  max-width: 619px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 35px;
+}
+
+.our-story-button {
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.title {
+  margin-bottom: 60px;
+  font-size: 90px;
+}
+
+.line {
+  display: block;
+  background: #fff;
+  width: 200px;
+  height: 2px;
+  transform: translateX(-220px);
+}
+
+/* our story end */
+
+/* coffee section start*/
+.coffee-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-section {
+  max-width: 800px;
+}
+
+.title-two {
+  font-size: 70px;
+  color: #fff;
+  font-family: "Kalnia", serif;
+}
+
+.content-section p {
+  color: #fff;
+  font-family: "Kalnia", serif;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.coffee-button {
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.coffee-background {
+  background-position: center;
+  background-size: cover;
+  max-width: 700px;
+  width: 700px;
+}
+
+/*coffee section end*/
+
+/* Products Start */
+.products {
+  margin-top: 5rem;
+  height: 80vh;
+}
+
+.title-three {
+  color: #fff;
+  font-size: 4rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  font-family: "Kalnia", serif;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  padding: 0 20px;
+  height: 400px;
+  width: 300px;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -60px;
+}
+
+.img-one {
+  background: url(images/coffee-section-background.png);
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -130px;
+}
+
+.img-two {
+  background: url(images/img2.png);
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -100px;
+}
+
+.img-three {
+  background: url(images/img3.png);
+  background-position: center;
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: -65px;
+}
+
+.card-title {
+  margin-top: 4rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.items p {
+  margin: 20px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Products End */
+
+/* footer start */
+footer {
+  height: 22vh;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 20px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  margin-top: 2rem;
+}
+
+.heading-info {
+  margin-bottom: 20px;
+}
+
+span {
+  color: var(--main-color);
+}
+
+footer p {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+/* footer end */
+
+/* media queries */
+@media only screen and (max-width: 768px) {
+  /* header */
+  .main-heading {
+    font-size: 5rem;
+  }
+
+  .primary-heading {
+    position: absolute;
+    top: 26rem;
+    font-size: 4rem;
+  }
+
+  .main-button {
+    font-size: large;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* our story */
+  #our-story {
+    height: 150vh;
+    margin-top: 0;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+  }
+
+  .title-two {
+    margin-left: 2rem;
+  }
+
+  /* coffee section */
+
+  .content-section p {
+    margin-left: 2rem;
+  }
+
+  .coffee-button {
+    margin-left: 2rem;
+  }
+
+  /* products */
+
+  .products {
+    height: 150vh;
+  }
+
+  /* footer */
+
+  footer p {
+    line-height: 25px;
+    font-size: 15px;
+  }
+
+  .heading-info {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .para {
+    margin-bottom: 5px;
+  }
+}
